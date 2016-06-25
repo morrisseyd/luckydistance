@@ -2,7 +2,6 @@ package com.luckydistance.fileoperations;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import org.json.simple.JSONObject;
@@ -23,7 +22,7 @@ public class JSONFileReader {
      * @param theFileName
      * @return A list of JSON objects read from the file
      */
-    public ArrayList ReadAndParseFile(String theFileName) throws IOException, ParseException {
+    public ArrayList readAndParseFile(String theFileName) throws IOException, ParseException {
 
         ArrayList<JSONObject> listOfJsonObjects = new ArrayList<JSONObject>();
         JSONObject theJsonObject;

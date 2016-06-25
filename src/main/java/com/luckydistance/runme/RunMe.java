@@ -59,7 +59,7 @@ public class RunMe {
 
         //Process the file
         JSONFileReader theFileReader = new JSONFileReader();
-        ArrayList<JSONObject> listOfJsonObjects = theFileReader.ReadAndParseFile(theFileNameAndPath);
+        ArrayList<JSONObject> listOfJsonObjects = theFileReader.readAndParseFile(theFileNameAndPath);
 
         return listOfJsonObjects;
     }
